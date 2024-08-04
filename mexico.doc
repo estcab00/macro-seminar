@@ -1,0 +1,22 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx2448\clbrdrt\brdrs\cellx3888\clbrdrt\brdrs\cellx5184
+\ql \cell\qc (1)\cell\qc (2)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2448\cellx3888\cellx5184
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx2448\clbrdrb\brdrs\cellx3888\clbrdrb\brdrs\cellx5184
+\ql VARIABLES\cell\qc OLS\cell\qc IV\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2448\cellx3888\cellx5184
+\ql \cell\qc \cell\qc \cell\row
+\ql CBI\cell\qc -164.8***\cell\qc -403.7**\cell\row
+\ql \cell\qc (29.50)\cell\qc (160.6)\cell\row
+\ql Unemploymentrate\cell\qc 9.314***\cell\qc 15.31**\cell\row
+\ql \cell\qc (2.139)\cell\qc (6.836)\cell\row
+\ql Constant\cell\qc 81.96***\cell\qc 194.4**\cell\row
+\ql \cell\qc (19.62)\cell\qc (78.75)\cell\row
+\ql \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 41\cell\qc 41\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx2448\clbrdrb\brdrs\cellx3888\clbrdrb\brdrs\cellx5184
+\ql R-squared\cell\qc 0.624\cell\qc -0.614\cell\row
+\pard\qc
+Robust standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

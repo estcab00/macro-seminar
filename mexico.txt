@@ -1,0 +1,14 @@
+	(1)	(2)
+VARIABLES	OLS	IV
+		
+CBI	-164.8***	-403.7**
+	(29.50)	(160.6)
+Unemploymentrate	9.314***	15.31**
+	(2.139)	(6.836)
+Constant	81.96***	194.4**
+	(19.62)	(78.75)
+		
+Observations	41	41
+R-squared	0.624	-0.614
+Robust standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		
