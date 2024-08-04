@@ -114,6 +114,8 @@ cbi_cpi = pd.merge(cpi_data_long, cbi_data_long, on=["Country", "Year"])
 # Convert the 'Year' column to datetime
 cbi_cpi["Year"] = pd.to_datetime(cbi_cpi["Year"], format='%Y')
 
+cbi_pbi.to_excel("data/CBI_CPI_database.xlsx")
+
 cbi_cpi.head()
 
 fig, ax = plt.subplots()
@@ -216,7 +218,7 @@ def plot_time_series_max(axes, x, y, color, xlabel, ylabel):
     # Add an arrow and text to the highest point of the CPI
     axes.annotate('Max Point',
                   xy=(max_date, max_point[1]),  # Coordinates of the maximum point
-                  xytext=(max_date + pd.Timedelta(days=10), max_point[1] - 0.1),  # Text offset (3 days and 10 units down)
+                  xytext=(max_date + pd.Timedelta(days=10), max_point[1] - 0.1),
                   textcoords='data',  # Text coordinates
                   arrowprops=dict(arrowstyle='->', color='darkblue'))
 
@@ -246,5 +248,5 @@ for i, country in enumerate(Countries):
 
 # Save our plot
 fig.tight_layout(pad=1.0)
-plt.savefig("CPI_CBI_Pacific_Alliance.png", bbox_inches='tight', dpi=300)
+plt.savefig("output/CPI_CBI_Pacific_Alliance.png", bbox_inches='tight', dpi=300)
 plt.show()
