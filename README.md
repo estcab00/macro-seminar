@@ -4,8 +4,8 @@ This repository contains the code for a final project of a research seminar, whe
 ## 📚 Structure
 The repository is organized as follows:
 
-- macro_seminar.py: This script contains the code for plotting all the graphs used in the project.
-- macro_seminar.do: This script contains the code for performing the IV and OLS regressions.
+- `macro_seminar.py`: This script contains the code for plotting all the graphs used in the project.
+- `macro_seminar.do`: This script contains the code for performing the IV and OLS regressions.
 - 📊 data: This directory holds the datasets used in the analysis.
 - 🖼️ output: This directory contains the generated images and plots.
 
