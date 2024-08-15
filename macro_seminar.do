@@ -2,11 +2,16 @@ clear all
 
 set more off
 
+/////////////////////////////////////////////////////////
+/* Define paths */
 global dir "C:\Users\estca\OneDrive\Documentos\Github\macro-seminar"
 
 global data "$dir/data"
 
+global output "$dir/output"
+
 /////////////////////////////////////////////////////////
+/* Install packages */
 ssc install outreg2
 ssc install estout
 
@@ -26,13 +31,13 @@ codebook , c
 /*** 2. Run OLS and IV regressions ***/ 
 
 reg CPI CBI Unemploymentrate, robust
-outreg2 using peru.doc, replace ctitle(OLS)
+outreg2 using "$output/ols_peru.doc", replace ctitle(OLS)
 
 margins, dydx(CBI Unemploymentrate)
 estimates store reg_ols_peru
 
 ivreg2 CPI (CBI = Currentaccountbalance) Unemploymentrate
-outreg2 using peru.doc, append ctitle(IV)
+outreg2 using "$output/iv_peru.doc", append ctitle(IV)
 mfx 
 estimates store reg_iv_peru
 
@@ -54,13 +59,13 @@ codebook , c
 /*** 2. Perform OLS and IV regressions ***/
 
 reg CPI CBI Unemploymentrate, robust
-outreg2 using chile.doc, replace ctitle(OLS)
+outreg2 using "$output/ols_chile.doc", replace ctitle(OLS)
 
 margins, dydx(CBI Unemploymentrate)
 estimates store reg_ols_chile
 
 ivreg2 CPI (CBI = Currentaccountbalance) Unemploymentrate
-outreg2 using chile.doc, append ctitle(IV)
+outreg2 using "$output/iv_chile.doc", append ctitle(IV)
 
 mfx 
 estimates store reg_iv_chile
@@ -83,13 +88,13 @@ codebook , c
 /*** 2. Perform OLS and IV regressions ***/
 
 reg CPI CBI Unemploymentrate, robust
-outreg2 using colombia.doc, replace ctitle(OLS)
+outreg2 using "$output/ols_colombia.doc", replace ctitle(OLS)
 
 margins, dydx(CBI Unemploymentrate)
 estimates store reg_ols_colombia
 
 ivreg2 CPI (CBI = Currentaccountbalance) Unemploymentrate
-outreg2 using colombia.doc, append ctitle(IV)
+outreg2 using "$output/iv_colombia.doc", append ctitle(IV)
 
 mfx 
 estimates store reg_iv_colombia
@@ -112,13 +117,13 @@ codebook , c
 /*** 2. Perform OLS and IV regressions ***/
 
 reg CPI CBI Unemploymentrate, robust
-outreg2 using mexico.doc, replace ctitle(OLS)
+outreg2 using "$output/ols_mexico.doc", replace ctitle(OLS)
 
 margins, dydx(CBI Unemploymentrate)
 estimates store reg_ols_mexico
 
 ivreg2 CPI (CBI = Currentaccountbalance) Unemploymentrate
-outreg2 using mexico.doc, append ctitle(IV)
+outreg2 using "$output/iv_mexico.doc", append ctitle(IV)
 
 mfx 
 estimates store reg_iv_mexico

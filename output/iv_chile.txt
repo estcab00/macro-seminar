@@ -1,0 +1,14 @@
+	(1)
+VARIABLES	IV
+	
+CBI	-33.64***
+	(11.69)
+Unemploymentrate	-0.557
+	(0.691)
+Constant	35.15***
+	(13.20)
+	
+Observations	41
+R-squared	0.507
+Standard errors in parentheses	
+*** p<0.01, ** p<0.05, * p<0.1	
